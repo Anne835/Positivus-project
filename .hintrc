@@ -21,9 +21,17 @@
     "axe/forms": [
       "default",
       {
-        "label": "off"
+        "label": "off",
+        "select-name": "off"
       }
     ],
-    "button-type": "off"
+    "button-type": "off",
+    "detect-css-reflows/composite": "off",
+    "axe/parsing": [
+      "default",
+      {
+        "marquee": "off"
+      }
+    ]
   }
 }

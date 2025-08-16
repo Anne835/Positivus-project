@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 </head>
 
@@ -19,8 +20,8 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <img class="navbar-brand fw-bold image-fluid" src="images/logo-black.png" alt="" />
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -69,7 +70,7 @@
     </div>
   </div>
 
-  <div class="container mt-5">
+  <div class="container mt-5 range">
     <div class=" d-inline-flex border border-secondary rounded-4 align-items-center p-5 bg-dark">
       <img src="images/Vector (1).png" alt="" class="image-fluid vector-img mb-5 mx-5">
       <h2 class="bg-highlight">Search engine optimization</h2>
@@ -85,10 +86,14 @@
     </div>
   </div>
   <div class="container">
+      <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start text-center text-lg-start gap-4 my-5">
+        <h2 class="serv m-0 rounded-4">How We Work: SEO Process</h2>
+        <p class="m-0">
+          Our step by step SEO process ensures your website<br class="d-none d-sm-block">
+          ranks higher, attracts more traffic, and drives lasting <br> results
+        </p>
+    </div>
     <div class="row g-10 text-center m-5">
-      <h1 class="col-6 col-md-2 serv">How We Work: SEO Process</h1>
-      <p class="col-sm-6 col-md-6">Our step by step SEO process ensures your website ranks higher, attracts more
-        traffic, and drives lasting results:</p>
       <div class="container">
         <div class="card rounded-5 seo-cards my-5 p-4">
           <div class="row g-4">
@@ -154,19 +159,21 @@
     </div>
   </div>
   <div class="container">
-    <div class="row g-10 text-center m-5">
-      <h1 class="col-6 col-md-2 serv">Use Cases</h1>
-      <p class="col-sm-6 col-md-6">Explore real-life examples of our proven digital-marketing successes through our case
-        studies.:</p>
-    </div>
+    <div class="section-1 d-flex flex-column flex-lg-row align-items-center align-items-lg-start text-center text-lg-start gap-4 my-5">
+    <h2 class="services m-0 serv rounded-4">Use Cases</h2>
+    <p class="m-0">
+      Explore real-life examples of our proven digital-marketing <br class="d-none d-sm-block">
+      successes through our case studies.  
+    </p>
+</div>
   </div>
   <div class="container my-5 px-3">
     <div class="bg-dark text-light rounded-5 p-4">
       <div class="row gy-4">
         <div class="col-12 col-md-4">
           <div class="p-4  border-secondary rounded-4 bg-dark text-start">
-            <h3>Ecommerce Fashion Brand</h3>
-            <p>We implemented a tailored SEO strategy that boosted organic search rankings, leading to a 180% increase
+            <h3 class="text-start">Ecommerce Fashion Brand</h3>
+            <p class="text-start">We implemented a tailored SEO strategy that boosted organic search rankings, leading to a 180% increase
               in website traffic and a 65% rise in online sales within six months.
             </p>
             <a href="#" class="learnlink">learn more <i class="bi bi-arrow-up-right"></i></a>
@@ -174,16 +181,16 @@
         </div>
         <div class="col-12 col-md-4">
           <div class="border-start border-secondary p-4 bg-dark text-start">
-            <h3>Local Restaurant Chain</h3>
-            <p>By optimizing local SEO and enhancing Google My Business profiles, we increased visibility, driving a
+            <h3 class="text-start">Local Restaurant Chain</h3>
+            <p class="my-3 text-start">By optimizing local SEO and enhancing Google My Business profiles, we increased visibility, driving a
               300% boost in online reservations and foot traffic. .</p>
-            <a href="#" class="learnlink">learn more <i class="bi bi-arrow-up-right"></i></a>
+            <a href="#" class="learnlink my-2" style="margin-top: 15px;">learn more <i class="bi bi-arrow-up-right"></i></a>
           </div>
         </div>
         <div class="col-12 col-md-4">
           <div class="border-start border-secondary p-4 bg-dark text-start">
-            <h3>Healthcare Provider</h3>
-            <p>Through content optimization and targeted keyword strategy, we helped a healthcare provider rank in the
+            <h3 class="text-start">Healthcare Provider</h3>
+            <p class="text-start">Through content optimization and targeted keyword strategy, we helped a healthcare provider rank in the
               first page for critical services, resulting in a 130% increase in inquiries and patient bookings.</p>
             <a href="#" class="learnlink">learn more <i class="bi bi-arrow-up-right"></i></a>
           </div>
@@ -192,6 +199,15 @@
     </div>
   </div>
 
+  <div class="container">
+    <div class="section-1 heading d-flex flex-column flex-lg-row align-items-center align-items-lg-start text-center text-lg-start gap-4 my-5">
+      <h3 class="serv m-0 rounded-4">Our Other Services</h3>
+      <p class="m-0">
+        At our digital marketing agency, we offer a range of services to <br class="d-none d-sm-block">
+        help businesses grow and succeed online. These services include:
+      </p>
+  </div>
+  </div>
   <div class="advertising-cards my-5">
     <div class="container mb-4">
       <div class="row">
@@ -367,7 +383,7 @@
                   </div>
                   <div class="row pb-4 pt-3 py-lg-5 py-lg-5 footer-info text-center text-lg-start">
                     <div class="col-lg-6 text-start">
-                      <h4 class="footer-heading ms-5 text-start">Contact Us:</h4>
+                      <h4 class="footer-heading text-start">Contact Us:</h4>
                       <p class="text-white text-start">Email: <a class="text-white text-decoration-none" href="mailto:info@positivus.com">info@positivus.com</a></p>
                       <p class="text-white text-start">Phone: <a class="text-white text-decoration-none" href="tel:5555678901">555 567 8901</a></p>
                       <p class="text-white text-start">Address: 1234 Main St <br>
@@ -415,6 +431,7 @@
         </footer>
   </div>
   <script src="js/bootstrap.min.js"></script>
+  <script src="scroll.js"></script>
   <script src="script.js"></script>
 </body>
 

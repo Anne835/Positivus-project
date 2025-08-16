@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -62,8 +63,8 @@
                 <div class=" border border-secondary p-3 rounded-5 h-100 plans basic-plan">
                     <h4>Basic Plan</h4>
                     <h2>$500 <span style="font-size: 16px;">/month</span></h2>
-                    <a href="#" class="btn btn-dark btn-lg w-75 mb-3">Get Started</a>
-                    <a class="px-4 py-2 btn btn-outline-dark btn-lg w-75 mb-4" href="#">Request a quote</a>
+                    <a href="#" class="btn btn-dark btn-lg w-75 mb-3 started">Get Started</a>
+                    <a class="px-4 py-2 btn btn-outline-dark btn-lg w-75 mb-4 quote" href="#">Request a quote</a>
                     <hr class="">
                     <div class="plan-icon mb-2">
                         <i class="bi bi-check-circle-fill"></i>
@@ -98,8 +99,8 @@
                         <span class="badge text-dark">Popular</span>
                     </div>
                     <h2>$1000 <span style="font-size: 16px;">/month</span></h2>
-                    <a href="#" class="btn btn-color btn-lg w-75 mb-3">Get Started</a>
-                    <a class="px-4 py-2 btn btn-outline-light  btn-lg w-75 mb-4" href="#">Request a quote</a>
+                    <a href="#" class="btn btn-color btn-lg w-75 mb-3 started">Get Started</a>
+                    <a class="px-4 py-2 btn btn-outline-light  btn-lg w-75 mb-4 quote" href="#">Request a quote</a>
                     <hr class="">
                     <div class="plan-icon mb-2">
                         <i class="bi bi-check-circle-fill"></i>
@@ -131,8 +132,8 @@
                 <div class="border border-secondary basic-plan p-4 rounded-5 h-100 plans">
                     <h4>Elite Plan</h4>
                     <h2>$2000 <span style="font-size: 16px;">/month</span></h2>
-                    <a href="#" class="btn btn-dark  btn-lg w-75 mb-3">Get Started</a>
-                    <a class="px-4 py-2 btn btn-outline-dark  btn-lg w-75 mb-3" href="#">Request a quote</a>
+                    <a href="#" class="btn btn-dark  btn-lg w-75 mb-3 started">Get Started</a>
+                    <a class="px-4 py-2 btn btn-outline-dark  btn-lg w-75 mb-3 quote" href="#">Request a quote</a>
                     <hr class="">
                     <div class="plan-icon mb-2">
                         <i class="bi bi-check-circle-fill"></i>
@@ -163,10 +164,12 @@
         </div>
     </div>
     <div class="container">
-        <div class="row g-10 text-center m-5">
-            <h1 class="col-6 col-md-2 serv">Frequently Asked Questions</h1>
-            <p class="col-sm-6 col-md-6"></p>
-        </div>
+        <div class="section-1 heading d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start gap-4">
+            <div class="d-flex flex-column serv rounded-4">
+              <h2>Frequently Asked</h2>
+              <h2>Questions</h2>
+            </div>
+          </div>
         <div class="container">
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item m-5 rounded-5">
@@ -340,7 +343,7 @@
                   </div>
                   <div class="row pb-4 pt-3 py-lg-5 py-lg-5 footer-info text-center text-lg-start">
                     <div class="col-lg-6 text-start">
-                      <h4 class="footer-heading ms-5 text-start">Contact Us:</h4>
+                      <h4 class="footer-heading text-start">Contact Us:</h4>
                       <p class="text-white text-start">Email: <a class="text-white text-decoration-none" href="mailto:info@positivus.com">info@positivus.com</a></p>
                       <p class="text-white text-start">Phone: <a class="text-white text-decoration-none" href="tel:5555678901">555 567 8901</a></p>
                       <p class="text-white text-start">Address: 1234 Main St <br>
@@ -387,7 +390,23 @@
              </div>
         </footer>
     </div>
+    <script> 
+        const plans = document.querySelectorAll('.plans');
+        const proPlan = document.querySelector('.pro-plan');
+
+        plans.forEach(plan =>{
+            plan.addEventListener('mouseenter', () =>{
+                if(!plan.classList.contains('pro-plan')){
+                    proPlan.classList.add('neutral');
+                }
+            });
+            plan.addEventListener('mouseleave', () =>{
+                proPlan.classList.remove('neutral');
+            })
+        })
+    </script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="scroll.js"></script>
     <script src="script.js"></script>
 </body>
 
